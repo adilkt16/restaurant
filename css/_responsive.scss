@@ -1,0 +1,639 @@
+
+
+@media all and (max-width:1200px){
+    //#spotlight
+    #spotlight {
+        text-align: center;
+        padding: 80px 0;
+    }
+    #spotlight ul {
+        flex-wrap: wrap;
+    }
+    #spotlight ul li {
+        width: 98%;
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    #spotlight ul li p {
+        text-align: center;
+    }
+    #spotlight ul li div.both-spotlight-buttons {
+        display: block ;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    div.main-spotlight-image {
+        margin: 0 auto;
+    }
+
+    //section.three-box
+    section.three-box ul li h5 {
+        font-size: 13px;
+    }
+
+    //menu-slider-1
+    #menu section.menu-slider-1 div.menu-list-container div.menu-list div.menu-item {
+        width: 800px;
+    }
+    //manual-menu
+    #menu section.all-manual-items section.single-category ul li div.single-product-detail div.product-image {
+        padding: 20px;
+        height: 170px;
+        width: 170px;
+    }
+
+    //#organise
+    #organise section.all-events div.single-event div.event-image {
+        width: 350px;
+    }
+
+    //book
+    #book ul li.reserve p.timing {
+        margin: 10px 0 20px;
+    }
+    #book ul li {
+        border: 1px solid;
+        padding: 30px 20px;
+        min-height: 250px;
+    }
+    #book ul li.reserve a {
+        padding: 6px 18px;
+        border-radius: 6px;
+    }
+
+    //footer
+    footer {
+        padding: 80px 80px 50px;
+    }
+}
+
+
+@media all and (max-width:980px){
+    //spotlight
+    #spotlight ul li div.main-spotlight-image {
+        width: 400px;
+    }
+    
+    //section.three-box
+    section.three-box ul li h5 {
+        letter-spacing: 0;
+    }
+
+    //menu-slider-1
+    #menu section.menu-slider-1 div.menu-list-container div.menu-list div.menu-item {
+        width: 600px;
+    }
+    //manual-menu
+    #menu section.all-manual-items section.single-category ul li {
+        width: 33%;
+    }
+
+    //#deliver
+    #deliver ul li div.home-deliver-img {
+        width: 300px;
+    }
+
+    //organise
+    #organise section.all-events div.single-event div.event-image {
+        width: 300px;
+    }
+    #organise section.all-events div.single-event {
+        width: 47%;
+    }
+
+    //#book
+    #book ul {
+        flex-wrap: wrap;
+    }
+    #book ul li {
+        padding: 50px 30px;
+        width: 46%;
+        margin: 15px 15px 15px 0;    
+        &:last-child{
+            width: 94%;
+            min-height: fit-content;
+        }
+    }
+
+    //gallery
+    #gallery ul li div.gallery-image {
+        height: 250px;
+    }
+
+    //chefs
+    #chefs{
+        padding: 60px 0;
+    }
+    #chefs ul li div.chef-image {
+        width: 120px;
+    }
+    #chefs ul li {
+        margin: 0 auto 50px;
+        padding: 30px 0px;
+        width: 31%;
+        min-height: 350px;
+        max-height: 350px;
+    }
+    #chefs ul li h6 {
+        font-size: 16px;
+    }
+    #chefs ul li p.chef-description {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    //#contact
+    footer {
+        padding: 80px 0 50px;
+        #contact ul.main-ul {
+            flex-wrap: wrap;
+            li {
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+
+@media all and (max-width:860px){
+    //COMMON 
+    section.common {
+        padding: 60px 0;
+    }
+    //COMMON ENDED
+
+    //.three-box
+    section.three-box ul li {
+        padding: 25px;
+    }
+
+    //#organise
+    #organise section.all-events div.single-event {
+        width: 100%;
+    }
+    #organise section.all-events div.single-event div.event-image {
+        width: 300px;
+    }
+
+    //gallery
+    #gallery ul li div.gallery-image {
+        height: 200px;
+    }
+
+    //chefs
+    #chefs ul li div.chef-social-icons a img {
+        width: 25px;
+        height: 25px;
+    }
+    #chefs ul li {
+        width: 31%;
+        min-height: 330px;
+        max-height: 330px;
+    }
+}
+
+
+@media all and (max-width:768px){
+    //COMMON
+    h2{
+        font-size: 32px;
+    }
+    //COMMON ENDED
+
+    //Navbar
+	.nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: $light-red;
+        width: 100%;
+        // border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 0 100px;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    html body  header nav.navbar div.hamburger {
+        display: block;
+        cursor: pointer;
+    }
+	.hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    ul.nav-menu {
+        li.nav-item {
+            margin-right: 0;
+            a {
+                font-size: 16px;
+                font-weight: 900;
+            }
+        }
+    }
+
+
+    //#header
+    header {
+        padding: 30px 60px;
+    }
+
+    //spotlight
+    #spotlight {
+        padding: 50px;
+    }
+
+    //.three-box
+    section.three-box ul {
+        flex-wrap: wrap;
+        li {
+            width: 48%;
+            &:last-child {
+                width: 100%;
+            }
+        }
+    }
+
+    //menu-slider-1
+    #menu section.menu-slider-1 div.menu-list-container div.menu-list div.menu-item {
+        width: 500px;
+    }
+    //manual-menu
+    #menu section.all-manual-items section.single-category ul li {
+        width: 50%;
+    }
+    #menu section.all-manual-items section.single-category ul li div.single-product-detail p.product-name {
+        font-size: 16px;
+        margin: 0;
+    }
+    #menu section.all-manual-items section.single-category ul li div.single-product-detail p.product-price {
+        font-size: 15px;
+    }
+
+    //#deliver
+    #deliver ul li div.home-deliver-img {
+        width: 250px;
+    }
+
+    //#book
+    #book h2 {
+        margin-bottom: 30px;
+    }
+    #book ul li {
+        padding: 30px;
+        width: 100%;
+        margin: 15px 0;
+        min-height: auto;
+        &:last-child {
+            width: 100%;
+        }
+    }
+
+    //gallery
+    #gallery ul li {
+        width: 48%;
+    }
+
+    //chefs
+    #chefs ul li {
+        width: 48%;
+        min-height: 320px;
+        max-height: 320px;
+    }
+
+    //#contact
+    footer {
+        padding: 50px 0;
+    }
+    footer #contact ul.main-ul li {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    footer #contact ul.main-ul li div {
+        width: fit-content;
+        display: block;
+        margin: 0 auto;
+    }
+    footer #contact ul.main-ul li div.address_etc div.both-image-and-detail {
+        align-items: center;
+    }
+    footer #contact ul.main-ul li ul.social-media li {
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    footer #contact ul.main-ul li ul.social-media {
+        margin: 0 100px;
+    }
+}
+
+
+@media all and (max-width:640px){
+    //header
+    header nav.navbar div.logo-bar a div.main-logo {
+        display: block;
+        width: 120px;
+    }
+
+    //#spotlight
+    #spotlight {
+        padding: 30px 50px;
+    }
+    #spotlight ul li h1 {
+        font-size: 42px;
+        span {
+            font-size: 44px;
+        }
+    }
+    #spotlight ul li p {
+        text-align: center;
+        font-size: 14px;
+    }
+    #spotlight ul li div.main-spotlight-image {
+        width: 300px;
+    }
+
+    //section.three-box
+    section.three-box ul li div {
+        width: 20px;
+    }
+
+    //menu-slider-1
+    #menu section.menu-slider-1 div.menu-nav button.menu-nav-item {
+        padding: 8px 24px;
+        font-size: 12px;
+    }
+    #menu section.menu-slider-1 div.menu-list-container {
+        height: 400px;
+    }
+    #menu section.menu-slider-1 div.menu-list-container div.menu-list div.menu-item {
+        width: 400px;
+    }
+    //manual-menu
+    #menu section.all-manual-items {
+        padding: 0;
+    }
+    #menu section.all-manual-items div.all-manual-buttons {
+        flex-wrap: wrap;
+    }
+    #menu section.all-manual-items div.all-manual-buttons a {
+        font-size: 13px;
+        padding: 8px 24px;
+    }
+    #menu section.all-manual-items section.single-category {
+        padding: 0px 10px;
+    }
+    #menu section.all-manual-items section.single-category ul li div.single-product-detail div.product-image {
+        padding: 20px;
+        height: 160px;
+        width: 160px;
+    }
+
+    //#deliver
+    #deliver {
+        text-align: center;
+        padding: 0 0 40px;
+        ul {
+            flex-wrap: wrap;
+            li {
+                width: 100%;
+                h6 {
+                    font-size: 16px;
+                }
+                h4 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    #deliver ul li div.home-deliver-img {
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+        padding: 40px 0 20px;
+    }
+    #deliver ul li div.deliver-options {
+        display: inline-flex;
+    }
+    
+    //#organise
+    #organise section.all-events div.single-event div.event-image {
+        width: 250px;
+    }
+    #organise section.all-events div.single-event h4 {
+        font-size: 22px;
+    }
+    #organise section.all-events div.single-event p {
+        font-size: 14px;
+    }
+
+    //#book
+    #book ul li.contact-details div.both-image-and-detail p {
+        font-size: 14px;
+    }
+
+    //chefs
+    #chefs {
+        padding: 40px 0;
+    }
+    #chefs ul li {
+        width: 100%;
+        min-height: 300px;
+        max-height: unset;
+    }
+
+    //#contact
+    footer {
+        padding: 50px 0 0px;
+    }
+}
+
+
+@media all and (max-width:480px){
+    //COMMON
+    section.common {
+        padding: 40px 0;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    //COMMON ENDED
+
+    //Header
+    header {
+        padding: 30px;
+    }
+
+    //#spotlight
+    #spotlight {
+        padding: 30px;
+    }
+    #spotlight ul li h1 {
+        font-size: 38px;
+        span {
+            font-size: 40px;
+        }
+    }
+    #spotlight ul li p {
+        font-size: 13px;
+    }
+    #spotlight ul li div.both-spotlight-buttons a {
+        margin: 20px 20px 0 0;
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+    #spotlight ul li div.main-spotlight-image {
+        width: 250px;
+    }
+
+    //section.three-box
+    section.three-box ul li {
+        width: 100%;
+    }
+    section.three-box ul li.white {
+        padding: 25px;
+    }
+
+    //#menu
+    #menu h2 {
+        margin-bottom: 20px;
+    }
+    //menu-slider-1
+    #menu section.menu-slider-1 div.menu-nav {
+        flex-wrap: wrap;
+    }
+    #menu section.menu-slider-1 div.menu-nav button.menu-nav-item {
+        margin: 0 10px 15px 0;
+    }
+    #menu section.menu-slider-1 div.menu-list-container {
+        height: 300px;
+    }
+    #menu section.menu-slider-1 div.menu-list-container div.menu-list div.menu-item {
+        width: 280px;
+    }
+    //manual-menu
+    #menu section.all-manual-items section.single-category h3 {
+        font-size: 20px;
+        padding: 10px 10px;
+        margin: 0 10px;
+    }
+    #menu section.all-manual-items div.all-manual-buttons {
+        margin-top: 30px;
+    }
+    #menu section.all-manual-items section.single-category {
+        padding: 0;
+    }
+    #menu section.all-manual-items section.single-category ul li div.single-product-detail p.product-name {
+        font-size: 15px;
+    }
+    #menu section.all-manual-items section.single-category ul li div.single-product-detail p.product-price {
+        font-size: 13px;
+    }
+
+    //#organise
+    #organise section.all-events div.single-event a {
+        font-size: 14px;
+    }
+
+    //#book
+    #book ul li.service-hours h6 {
+        font-size: 16px;
+    }
+    #book ul li.service-hours p.day {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    #book ul li.service-hours p.timing {
+        font-size: 15px;
+    }
+    #book ul li.reserve h6 {
+        font-size: 16px;
+    }
+    #book ul li.reserve a {
+        font-size: 14px;
+    }
+
+    //gallery
+    #gallery ul li div.gallery-image {
+        height: 160px;
+    }
+
+    //chefs
+    #chefs ul li h6 {
+        font-size: 14px;
+    }
+
+    //#contact 
+    footer #contact ul.main-ul li h4 {
+        font-size: 24px;
+    }
+    footer #contact ul.main-ul li a {
+        font-size: 14px;
+    }
+    footer #contact ul.main-ul li div.address_etc div.both-image-and-detail p {
+        font-size: 14px;
+    }
+    footer #contact ul.main-ul li p.day {
+        font-size: 16px;
+    }
+    footer #contact ul.main-ul li p.time {
+        font-size: 14px;
+    }
+}
+
+
+@media all and (max-width:360px){
+    //menu
+    #menu section.menu-slider-1 div.menu-list-container div.menu-list div.menu-item {
+        width: 260px;
+    }
+    //manual-menu
+    #menu section.all-manual-items section.single-category ul li div.single-product-detail div.product-image {
+        padding: 0px;
+        height: 120px;
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    //#deliver
+    #deliver ul li div.deliver-options a div.deliver-image {
+        width: 50px;
+    }
+
+    //#organise
+    #organise section.all-events div.single-event:last-child {
+        margin: 0 auto;
+    }
+    #organise section.all-events div.single-event div.event-image {
+        width: 220px;
+    }
+
+    //gallery
+    #gallery ul li div.gallery-image {
+        height: 140px;
+    }
+
+    //#contact
+    footer #contact ul.main-ul li ul.social-media {
+        margin: 0 70px;
+    }
+}
+
+
+@media all and (max-width:320px){}
